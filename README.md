@@ -2,7 +2,7 @@
 
 A minimal, zero-dependency Node.js HTTP server that responds with "Hello, World!" to all incoming requests. Originally created as a Backprop integration test harness.
 
-> **Project Context:** This repository serves as a [Backprop](https://backprop.dev) integration test fixture. The server is intentionally minimal — a single-file, zero-dependency HTTP server — to provide a stable, predictable target for integration testing workflows.
+> **Project Context:** This repository serves as a Backprop integration test fixture. The server is intentionally minimal — a single-file, zero-dependency HTTP server — to provide a stable, predictable target for integration testing workflows.
 
 | Metadata | Value | Source |
 |---|---|---|
@@ -12,7 +12,7 @@ A minimal, zero-dependency Node.js HTTP server that responds with "Hello, World!
 | License | MIT | `package.json:10` |
 | Entry Point | `server.js` | `server.js:12-57` |
 
-### Architecture Overview
+## Architecture Overview
 
 ```mermaid
 flowchart LR
@@ -74,7 +74,7 @@ node server.js
 
 **2. Observe the startup message:**
 
-```
+```text
 Server running at http://127.0.0.1:3000/
 ```
 
@@ -88,7 +88,7 @@ curl http://127.0.0.1:3000
 
 **Expected output:**
 
-```
+```text
 Hello, World!
 ```
 
@@ -106,7 +106,7 @@ Press `Ctrl+C` (sends SIGINT) to terminate the server process.
 
 The server exposes a single endpoint at:
 
-```
+```text
 http://127.0.0.1:3000/
 ```
 
@@ -321,7 +321,7 @@ sudo systemctl start hao-backprop-test
 
 The repository has a flat structure with no subdirectories:
 
-```
+```text
 hao-backprop-test/
 ├── server.js
 ├── package.json
@@ -346,7 +346,7 @@ hao-backprop-test/
 
 **Error message:**
 
-```
+```text
 Error: listen EADDRINUSE: address already in use 127.0.0.1:3000
 ```
 
@@ -384,7 +384,7 @@ node --version
 
 **Error message:**
 
-```
+```text
 Error: Cannot find module '/path/to/server.js'
 ```
 
